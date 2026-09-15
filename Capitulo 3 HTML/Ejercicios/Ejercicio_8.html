@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- Ejercicio 3.8 -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>3.8 Formulario Autocomplete y Datalist</title>
+    </head>
+
+    <body>
+        <nav>
+        <a href="Ejercicio_7.html">← Anterior</a> | 
+        <a href="../index_cap3.html">Menú del Capítulo 3</a> | 
+        <a href="Ejercicio_9.html">Siguiente →</a>
+        </nav>
+        <hr>
+
+        <h1>Formulario Autocomple con un elemento datalist</h1>
+        <form method="post" autocomplete="on">
+            <p><label for="listatexto">D&iacute;as de la Semana:
+                <input type="text" id="listatexto"
+                placeholder="Seleccione un día de la semana:" list="dias"/>
+
+                <datalist id="dias">
+                    <option value="Lunes">
+                    <option value="Martes">
+                    <option value="Miercoles">
+                    <option value="Jueves">
+                    <option value="Viernes">
+                    <option value="Sabado">
+                    <option value="Domingo">
+                </datalist>
+            </label></p>
+                
+        </form>
+
+    </body>

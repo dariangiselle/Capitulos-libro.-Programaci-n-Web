@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- Ejercicio 2.16 -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Retroalimentación sobre visita al campus</title>
+    </head>
+
+    <body>
+        <nav>
+        <a href="ejercicio_15.html">← Anterior</a> | 
+        <a href="../index_cap2.html">Menú del Capítulo 2</a> | 
+        <a href="ejercicio_17.html">Siguiente →</a>
+        </nav>
+        <hr>
+
+        <h1>Formulario de retroalimentaci&oacute;n sobre visita al Campus</h1>
+        <form method="post" action="http:/www.deitel.com">
+        <p><label>Nombre:
+            <input name="Nombre" type="texto" size="25">
+        </label></p>
+
+        <p><label>Direcci&oacute;n de correo electr&oacute;nico:
+            <input name="correo" type="password" size="25">
+        </label></p>
+
+        <p>
+            <strong>¿Qu&eacute; te gust&oacute; m&aacute;s sobre el campus?</strong>
+            <label>Campus
+                <input name="gusto" type="checkbox"
+                    value="Dise&ntilde;o"></label>
+            <label>Estudiantes
+                <input name="gusto" type="checkbox"
+                    value="Dise&ntilde;o"></label>
+             <label>Ubicaci&oacute;n
+                <input name="gusto" type="checkbox"
+                    value="Dise&ntilde;o"></label>
+             <label>Ambiente
+                <input name="gusto" type="checkbox"
+                    value="Dise&ntilde;o"></label>
+             <label>Dormitorios
+                <input name="gusto" type="checkbox"
+                    value="Dise&ntilde;o"></label>
+             <label>Deportes
+                <input name="gusto" type="checkbox"
+                    value="Dise&ntilde;o"></label>
+
+            <p>
+                <strong>C&oacute;mo supieron sobre nuestra universidad:</strong>
+
+                <label>Amigos
+                    <input name="Conocer" type="radio"
+                        value="Conocidos">
+                </label>
+                <label>Televisi&oacute;n
+                    <input name="Conocer" type="radio"
+                        value="Tele">
+                </label>
+                <label>Internet
+                    <input name="Conocer" type="radio"
+                        value="sitios">
+                </label>
+                <label>Familiares
+                    <input name="Conocer" type="radio"
+                        value="Familia">
+                </label>
+                <label>Otros campus
+                    <input name="Conocer" type="radio"
+                        value="Otro">
+                </label>
+
+                <p><label>Comentarios adicionales:<br>
+                    <textarea name="comentarios"
+                        rows="4" cols="36">Escriba aqu&iacute; sus comentarios</textarea>
+                </label></p>
+
+                <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Restablecer">
+                </p>
+            </p>
+                
+        </p>
+        </form>
+    </body>
+</html>

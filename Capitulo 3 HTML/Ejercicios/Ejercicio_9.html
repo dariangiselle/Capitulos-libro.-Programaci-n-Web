@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- Ejercicio 3.9 -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>3.9 Subtema 3.2.1 - input tipo color</title>
+    </head>
+
+    <body>
+        <nav>
+        <a href="Ejercicio_8.html">← Anterior</a> | 
+        <a href="../index_cap3.html">Menú del Capítulo 3</a> | 
+        <a href="Ejercicio_10.html">Siguiente →</a>
+        </nav>
+        <hr>
+
+        <h2><code>3.2.1 input <strong>tipo</strong> color</code></h2>
+        <p>
+            El <strong>tipo input color</strong> (figura 3.1, l&iacute;neas 20 y 21) permite al usuario introducir un color. 
+            Al momento de escribir este libro, algunos navegadores despliegan el tipo 
+            <code>input color</code> como un campo de texto en donde el usuario puede 
+            introducir un c&oacute;digo hexadecimal o el nombre de un color. Hay dos navegadores, 
+            Chrome y Opera, que muestran un <em>selector de color</em> similar al cuadro 
+            de di&aacute;logo de colores de Microsoft Windows, que se muestra en la figura 3.2. En el futuro, cuando haga clic en 
+            un elemento <code>input color</code>, es muy probable que el resto de los 
+            navegadores muestren un <em>selector de color</em> tambi&eacute;n.
+        </p>
+
+        <hr>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+
+        <p><strong>Figura 3.2 |</strong> Un di&aacute;logo para seleccionar colores.</p>
+
+        <h4><em>El atributo autofocus</em></h4>
+        <p>
+            El <strong>atributo autofocus</strong> (figura 3.1, l&iacute;nea 20) (un atributo opcional que puede usarse s&oacute;lo en un elemento 
+            <code>input</code> en un formulario) otorga de manera autom&aacute;tica el enfoque al elemento 
+            <code>input</code>, lo que permite al usuario empezar a escribir en ese elemento de inmediato. 
+            La figura 3.3 muestra el uso del elemento <code>autofocus</code> en el 
+            elemento <code>color</code> (el primer elemento <code>input</code> en nuestro formulario), como se despliega en Opera. No necesita incluir <code>autofocus</code> en sus formularios.
+        </p>
+
+        <hr>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <p><strong>Figura 3.3 |</strong> Autofocus en el elemento <code>input</code> color cuando se usa el navegador Opera.</p>
+
+        <h4><em>Validaci&oacute;n</em></h4>
+        <p>
+            Tradicionalmente ha sido dif&iacute;cil validar la entrada del usuario, como asegurar que se introduzca 
+            una direcci&oacute;n de correo electr&oacute;nico, URL, fecha u hora en el formato adecuado. Los nuevos tipos 
+            <code>input</code> de HTML5 cuentan con <em>validaci&oacute;n autom&aacute;tica</em> del lado del cliente, con lo 
+            que se elimina la necesidad de agregar c&oacute;digo complicado de JavaScript a nuestras p&aacute;ginas Web 
+            para validar la entrada del usuario; as&iacute; se reduce la cantidad de datos inv&aacute;lidos que se env&iacute;an y, 
+            en consecuencia, disminuye el tr&aacute;fico de Internet entre el servidor y el cliente que se usa para 
+            corregir las entradas inv&aacute;lidas. <em>De todas formas el servidor debe validar toda la entrada del usuario.</em>
+        </p>
+        <p>
+            Cuando un usuario introduce datos en un formulario y luego lo env&iacute;a (en este ejemplo, al hacer clic en el 
+            bot&oacute;n <strong>Enviar</strong>), el navegador verifica de inmediato los elementos de validaci&oacute;n autom&aacute;tica 
+            para asegurar que los datos sean correctos. Por ejemplo, si un usuario introduce un valor de color 
+            hexadecimal incorrecto al usar un navegador que despliegue los elementos color como un campo de texto 
+            (por ejemplo, Internet Explorer), aparecer&aacute; una anotaci&oacute;n para se&ntilde;alar ese elemento e indicar que se 
+            introdujo un valor incorrecto (figura 3.4). La figura 3.5 lista cada uno de los nuevos tipos <code>input</code> de HTML5 y muestra ejemplos de los formatos correctos requeridos para que cada tipo de datos sea v&aacute;lido.
+        </p>
+
+        <hr>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+
+        <p><strong>Figura 3.4 |</strong> Validaci&oacute;n de un elemento input color. (Actualmente ya no existe esta funcionalidad en Chrome).</p>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <p><strong>Figura 3.5 |</strong> Tipos de input con validaci&oacute;n autom&aacute;tica.</p>
+
+        <br>
+
+        <p>
+            Si desea pasar por alto la validaci&oacute;n, puede agregar el <strong>atributo formnovalidate</strong> al tipo <code>input submit</code> en la línea 101:
+        </p>
+
+        <p>
+            <code>&lt;input type = "submit" value = "Enviar" formnovalidate /&gt;</code>
+        </p>
+
+    </body>

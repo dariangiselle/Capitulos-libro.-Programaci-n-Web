@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- Ejercicio 3.5 -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>3.5 Elementos HTML5</title>
+    </head>
+
+    <body>
+        <nav>
+        <a href="Ejercicio_4.html">← Anterior</a> | 
+        <a href="../index_cap3.html">Menú del Capítulo 3</a> | 
+        <a href="Ejercicio_6.html">Siguiente →</a>
+        </nav>
+        <hr>
+
+        <!-- a) Se pidió a los estudiantes que clasificaran los alimentos en la cafetería, en una escala del 1 al 10. Use un elemento 
+        meter con texto a su izquierda y a su derecha para indicar que la calificación promedio fue 7 de 10.-->
+        <h4>Clasificaci&oacute;n de los elementos de la cafeter&iacute;a en una escala del 1 al 10 por parte de los estudiantes</h4>
+         0 <meter min="1"
+        max="10"
+        value=7></meter> 10
+        <p>La calificaci&oacute;n promedio por parte de los estudiantes es de 7 de 10 </p><br>
+
+        <!-- b) Cree un elemento details que muestre el texto "Resultados de la encuesta" en el elemento summary para la parte (a). Cuando el 
+        usuario haga clic en la flecha enseguida del texto de summary, deberá aparecer un párrafo que explique sobre la encuesta.-->
+        <details>
+            <summary>Resultados de la encuesta</summary>
+            <p>
+                <li>"La encuesta realizada a los estudiantes para conocer como clasifican los elementos de la cafeter&iacute;a escolar 
+                    en una escala del 1 al 10 dio una calificaci&oacute;n promedio de 7 de 10.
+                </li>
+            </p>
+        </details><br>
+
+        <!-- c) Cree un elemento input text para el primer nombre. El elemento deberá recibir el enfoque de manera automática al momento de desplegar 
+        el formulario en un navegador. -->
+        <form method="post" autocomplete="on">
+            <p><label>Primer nombre:
+                <input type="text" id="primerNombre">
+            </label></p><br>
+        </form>
+
+        <!-- d) Modifique la parte (c) de modo que se elimine el elemento label y use texto en un elemento placeholder en el elemento input. -->
+        <form method="post" autocomplete="on">
+            <p>Primer nombre:
+                <input type="text" id="primerNombre"
+                placeholder="Primer nombre" /> (Primer nombre)
+            </p><br>
+        </form>
+        
+        <!-- e) Use un elemento datalist para proveer una lista autocomplete para cinco estados. -->
+        <form method="post" autocomplete="off"></form>
+        <p><label for="listaTexto">Estados:
+                <input type="text" id="listaTexto"
+                placeholder="Seleccione un estado" list="estados"/>
+                <datalist id="estados">
+                    <option value="Veracruz">
+                    <option value="Jalisco">
+                    <option value="Ciudad de M&eacute;xico">
+                    <option value="Michoac&aacute;n">
+                    <option value="Baja California">
+                </datalist>
+        </label></p><br>
+
+        <!-- f) Cree un elemento input range que permita al usuario seleccionar un número del 1 al 100. -->
+        <p>
+            <h4>Seleccione un n&uacute;mero del 1 al 100:</h4>
+            <label>Rango:
+                0 <input type="range"
+                    min="1"
+                    max="100"
+                    value="1" /> 100
+            </label>
+        </p><br>
+
+        <!-- g) Especifique que no debe permitirse el atributo autocomplete en un formulario. Muestre sólo la etiqueta
+        de apertura del formulario. -->
+        <h4>Etiqueta de apertura de formulario sin autocomplete.</h4>
+        <form method="post" autocomplete="off"></form><br>
+
+        <!-- h) Use un elemento mark para resaltar el segundo enunciado del siguiente párrafo:  
+        <p>Se pidi&oacute; a los estudiantes que calificaran los alimentos en la cafeter&iacute;a En una escala del 1 al 10. El resultado promedio fue 7.</p> -->
+        <h4>Segundo p&aacute;rrafo resaltado:</h4>
+        <p>Se pidi&oacute; a los estudiantes que calificaran los alimentos en la cafeter&iacute;a En una escala del 1 al 10. <mark>El resultado promedio fue 7.</mark></p>
+        <br>
+    </body>

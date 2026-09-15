@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Listas anidadas y listas desordenadas-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Listas</title>
+    </head>
+
+    <body>
+        <nav>
+        <a href="ejemplo_8.html">← Anterior</a> | 
+        <a href="../index_cap2.html">Menú del Capítulo 2</a> | 
+        <a href="ejemplo_10.html">Siguiente →</a>
+        </nav>
+        <hr>
+
+        <h1>Las mejores caracter&iacute;sticas de Internet</h1>
+
+        <!-- Crear una lista desordenada -->
+        <ul>
+            <li>Puede conocer nuevas personas de pa&iacute;ses de todo el mundo.</li>
+            <li>
+                Tiene acceso a los nuevos medios a medida que se hacen p&uacute;biblicos:
+                <!-- esto empieza una lista desordenada anidada, que usa una viñeta distinta. La lista termina al cerrar la etiqueta <ul>.-->
+            
+                <ul>
+                    <li>Nuevos juegos</li>
+                    <li>Nuevas aplicaciones
+
+                    <!-- lista ordenada anidada -->
+                        <ol>
+                            <li>Por negocios</li>
+                            <li>Por placer</li>
+                        </ol>
+                    </li> <!-- termina elemento li que inició en la linea 27 y que llama a nuevas aplicaciones -->
+                    <li>Noticias las 24 horas</li>
+                    <li>Motores de b&uacute;squeda</li>
+                    <li>Compras</li>
+                    <li>Programaci&oacute;n 
+                    
+                        <!-- otra lista ordenada anidada-->
+                        <ol>
+                            <li>XML</li>
+                            <li>Java</li>
+                            <li>HTML5</li>
+                            <li>JavaScript</li>
+                            <li>Nuevos lenguajes</li>
+                        </ol>
+                    </li> <!-- termina elemento li, llamado programación, que inició en la linea 38-->
+                </ul> <!-- Termina la lista anidada de la línea 24-->
+            </li>
+
+            <li>V&iacute;nculos</li>
+            <li>Mantenerse en contacto con viejos amigos</li>
+            <li>Es la tecnolog&iacute;a del futuro</li>
+        </ul> <!-- Termina la lista desordenada de la linea 15 -->
+    </body>
+</html>
